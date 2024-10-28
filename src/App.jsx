@@ -12,6 +12,9 @@ function App() {
       let allTodos = JSON.parse(allTodosJson);
       return allTodos;
     }
+    else {
+      return ([]);
+    }
   });
   const [finishedTasks, setFinishedTasks] = useState(true);
 
