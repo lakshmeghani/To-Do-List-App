@@ -79,7 +79,7 @@ function App() {
           <h2 className='add w-auto whitespace-nowrap text-sm md:text-xl'>Add a Todo</h2>
           <input className='text-black w-full p-2 rounded-xl' type="text" name="todo" value={newTodo} onChange={handleNewTodo} />
           <button className="add p-2 rounded-full border disabled:bg-red-500 hover:bg-[#7340A0] transition-all duration-300" disabled={newTodo.length < 1} onClick={handleAdd}>
-            <img src="src/assets/add.svg " alt="add" />
+            <img src="./src/assets/add.svg " alt="add" />
           </button>
         </div>
         <div className="showingTodos flex justify-between">
@@ -106,10 +106,10 @@ function App() {
                     <div className="buttonOps flex gap-5 items-center">
                       <input className='md:h-7 h-5 md:w-7 w-5' type="checkbox" name={singleTodo.id} onChange={handleCheckBox} checked={singleTodo.isCompleted} />
                       <button className="edit p-2 rounded-full border hover:bg-[#7340A0] transition-all duration-300" onClick={(e) => { handleEdit(e, singleTodo.id) }}>
-                        <img src="src/assets/edit.svg" alt="edit" />
+                        <img src="./src/assets/edit.svg" alt="edit" />
                       </button>
                       <button className="delete p-2 rounded-full border hover:bg-red-500 transition-all duration-300" onClick={(e) => { handleDelete(e, singleTodo.id) }}>
-                        <img src="src/assets/delete.svg" alt="delete" />
+                        <img src="./src/assets/delete.svg" alt="delete" />
                       </button>
                     </div>
                   </li>
